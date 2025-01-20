@@ -4,10 +4,28 @@ sub_title: That you may or may not know
 author: Daniel
 ---
 
-## 1. Rerun the previous command with sudo
+## 1. Bang ! operator stuff
+
+Previous command `!!`, you can use - to specify current command minus number `!-2`, or just directly the command line number `!2`
 
 ```bash
 sudo !!
+```
+<!-- pause -->
+
+Get the previous arguments for the last command
+
+```bash
+mkdir thing
+cd !$
+```
+
+<!-- pause -->
+
+Get the command that starts with `!{string}`
+
+```bash
+echo !mkdir
 ```
 
 <!-- end_slide -->
@@ -42,6 +60,10 @@ cd projects
 <!-- pause -->
 
 `<Ctrl-D>`: Close the current terminal
+
+<!-- pause -->
+
+`<Ctrl-Z>`: Pause command to background, `bg` to continue it in the background, `fg` to bring it to the foreground
 
 <!-- end_slide -->
 
