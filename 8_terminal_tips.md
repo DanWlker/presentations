@@ -1,5 +1,5 @@
 ---
-title: 10 Terminal Tips
+title: 8 Terminal Tips
 sub_title: That you may or may not know
 author: Daniel
 ---
