@@ -113,7 +113,19 @@ git worktree remove worktree_folder
 
 <!-- end_slide -->
 
-## 7. Modern alternatives to built in commands
+## 7. Send running command to background
+
+The `&` symbol allows you to send commands to the background
+
+```bash
+make test > thing.txt &; tail -f thing.txt
+```
+
+use `fg` to bring them back to the foreground
+
+<!-- end_slide -->
+
+## 8. Modern alternatives to built in commands
 
 1. cd: zoxide
 
@@ -147,7 +159,7 @@ git worktree remove worktree_folder
 
 <!-- end_slide -->
 
-## 8. Some useful command flags and behaviours
+## 9. Some useful command flags and behaviours
 
 To go back to your last folder location
 
@@ -188,3 +200,9 @@ chmod -R u+rwx,g=,o= DIRECTORY
 1. https://unix.stackexchange.com/questions/11376/what-does-double-dash-double-hyphen-mean/11382#11382
 
 1. https://git-scm.com/docs/git-worktree
+
+<!-- end_slide -->
+
+## Extras
+
+Using spotlight on the command line: `mdfind`
