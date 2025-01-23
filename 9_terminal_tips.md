@@ -137,7 +137,7 @@ use `fg` to bring them back to the foreground
 
 <!-- end_slide -->
 
-## 8. Modern alternatives to built in commands
+## 8. Modern alternatives to built in commands, and some other useful tools
 
 1. cd: zoxide
 
@@ -168,6 +168,10 @@ use `fg` to bring them back to the foreground
    - cat with syntax highlighting, git interaction etc
 
 <!-- new_line -->
+
+1. direnv
+
+   - auto load environment variables when cd into a folder
 
 <!-- end_slide -->
 
