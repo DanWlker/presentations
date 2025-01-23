@@ -11,6 +11,7 @@ Previous command `!!`, you can use - to specify current command minus number `!-
 ```bash
 sudo !!
 ```
+
 <!-- pause -->
 
 Get the previous arguments for the last command
@@ -36,6 +37,7 @@ echo !mkdir
 cd projects
 ls -a
 ```
+
 <!-- pause -->
 
 ```bash
@@ -55,7 +57,17 @@ cd projects
 
 <!-- pause -->
 
-`<Ctrl-X><Ctrl-X>`: Edit current command in `$VISUAL`
+For Bash:
+
+`<Ctrl-X><Ctrl-E>`: Edit current command in `$VISUAL`
+
+To do this is ZSH:
+
+```bash
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+```
 
 <!-- pause -->
 
@@ -113,7 +125,7 @@ git worktree remove worktree_folder
 
 <!-- end_slide -->
 
-## 7. Send running command to background
+## 7. Send running command to background (same as Ctrl-Z)
 
 The `&` symbol allows you to send commands to the background
 
@@ -129,31 +141,31 @@ use `fg` to bring them back to the foreground
 
 1. cd: zoxide
 
-    - Fuzzy file navigation
+   - Fuzzy file navigation
 
 <!-- new_line -->
 
 1. grep: rg
 
-    - Written in rust, multithreading
+   - Written in rust, multithreading
 
 <!-- new_line -->
 
 1. ls: eza
 
-    - ls but with better ux, colors, icons etc
+   - ls but with better ux, colors, icons etc
 
 <!-- new_line -->
 
 1. find: fd
 
-    - Written in rust, faster
+   - Written in rust, faster
 
 <!-- new_line -->
 
 1. cat: bat
 
-    - cat with syntax highlighting, git interaction etc
+   - cat with syntax highlighting, git interaction etc
 
 <!-- new_line -->
 
@@ -195,11 +207,11 @@ chmod -R u+rwx,g=,o= DIRECTORY
 
 ## References
 
-1. https://unix.stackexchange.com/questions/4859/visual-vs-editor-what-s-the-difference
+1. <https://unix.stackexchange.com/questions/4859/visual-vs-editor-what-s-the-difference>
 
-1. https://unix.stackexchange.com/questions/11376/what-does-double-dash-double-hyphen-mean/11382#11382
+1. <https://unix.stackexchange.com/questions/11376/what-does-double-dash-double-hyphen-mean/11382#11382>
 
-1. https://git-scm.com/docs/git-worktree
+1. <https://git-scm.com/docs/git-worktree>
 
 <!-- end_slide -->
 
