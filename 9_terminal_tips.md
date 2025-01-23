@@ -222,3 +222,5 @@ chmod -R u+rwx,g=,o= DIRECTORY
 ## Extras
 
 Using spotlight on the command line: `mdfind`
+
+<https://metaredux.com/posts/2019/12/22/mdfind.html>
